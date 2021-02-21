@@ -314,6 +314,7 @@ values (414,'Guantes ligeras',120,255,221),
 (578,'Cinturon Espuma',150,852,222),
 (350,'Toalla Felpa',50,620,223);
 
+insert into Marca
 values (52546,'Nike');
 
 insert into Modelo
