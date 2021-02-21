@@ -298,6 +298,14 @@ values (1111, 'Nitro Tech', 300, 112, 111),
        (205, 'High Serious Mass', 420, 205, 115),
        (206, 'Whey Gainer BigM', 150, 206, 115);
 
+insert into Marca
+values (52546,'Nike');
+
+insert into Modelo
+values (301,'100% Cuero',52546);
+
+insert into Producto
+values (308,'Guante Ultrafino',80,301,221);
 
 insert into ObjeticoFit
 values (34567, 'Perder Peso'),
