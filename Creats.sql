@@ -147,7 +147,7 @@ CREATE TABLE Persona (
     TAvenida text  NOT NULL,
     NumLote int  NOT NULL,
     NumMz int  NOT NULL,
-    TCorreoElectronico text  NOT NULL,
+    TCorreoElectronico nvarchar(max)  NOT NULL,
     NApellidoPaterno nvarchar(30)  NOT NULL,
     NApellidoMaterno nvarchar(30)  NOT NULL,
     CTipoDocumento int  NOT NULL,
