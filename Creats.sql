@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2021-02-19 04:26:30.926
+-- Last modification date: 2021-02-21 17:31:55.993
 
 -- tables
 -- Table: Activador
@@ -85,8 +85,8 @@ CREATE TABLE Empleado (
 CREATE TABLE Horario_Sede (
     CSede int  NOT NULL,
     CDia int  NOT NULL,
-    DApertura date  NOT NULL,
-    DCierre date  NOT NULL,
+    DApertura smalldatetime  NOT NULL,
+    DCierre smalldatetime  NOT NULL,
     CONSTRAINT Horario_Sede_pk PRIMARY KEY  (CDia,CSede)
 );
 
@@ -255,7 +255,7 @@ CREATE TABLE ReservaHorario (
     CSede int  NOT NULL,
     CReservaHorario int  NOT NULL,
     FDisponible binary(1)  NOT NULL,
-    DRegistro date  NOT NULL,
+    DRegistro smalldatetime  NOT NULL,
     FReservaActiva binary(1)  NOT NULL,
     CUsuario int  NOT NULL,
     CONSTRAINT ReservaHorario_pk PRIMARY KEY  (CReservaHorario)
@@ -676,3 +676,4 @@ ALTER TABLE VirtualPlataforma ADD CONSTRAINT VirtualPlataforma_VirtualCamp
     REFERENCES VirtualCamp (CVirtualCamp);
 
 -- End of file.
+
