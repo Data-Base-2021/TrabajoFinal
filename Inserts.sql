@@ -298,6 +298,20 @@ values (1111, 'Nitro Tech', 300, 112, 111),
        (205, 'High Serious Mass', 420, 205, 115),
        (206, 'Whey Gainer BigM', 150, 206, 115);
 
+insert into Marca
+values (59882,'Adidas'),
+(26554,'RDX'),
+(14758,'Nicoleta');
+
+insert into Modelo
+values (255,'Ligero',59882),
+(852,'Espuma',26554),
+(620,'Felpa',14758);
+
+insert into Producto
+values (414,'Guantes ligeras',120,255,221),
+(578,'Cinturon Espuma',150,852,222),
+(350,'Toalla Felpa',50,620,223);
 
 insert into ObjeticoFit
 values (34567, 'Perder Peso'),
