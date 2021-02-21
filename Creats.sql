@@ -85,8 +85,8 @@ CREATE TABLE Empleado (
 CREATE TABLE Horario_Sede (
     CSede int  NOT NULL,
     CDia int  NOT NULL,
-    DApertura smalldatetime  NOT NULL,
-    DCierre smalldatetime  NOT NULL,
+    DApertura time(2)  NOT NULL,
+    DCierre time(2)  NOT NULL,
     CONSTRAINT Horario_Sede_pk PRIMARY KEY  (CDia,CSede)
 );
 
