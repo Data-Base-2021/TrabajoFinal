@@ -309,8 +309,8 @@ CREATE TABLE Tipo_Documento (
 CREATE TABLE TurnoTrabajo (
     CTurno int  NOT NULL,
     NTurno varchar(30)  NOT NULL,
-    DIncio date  NOT NULL,
-    DFinal date  NOT NULL,
+    DIncio time(2)  NOT NULL,
+    DFinal time(2)  NOT NULL,
     CONSTRAINT TurnoTrabajo_pk PRIMARY KEY  (CTurno)
 );
 
