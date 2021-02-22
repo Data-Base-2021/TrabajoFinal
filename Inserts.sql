@@ -681,3 +681,61 @@ values (27514,1,78810,'2021/02/02', 1 ,1,25461175,36025789),
 	   (27541,2,98210,'2017/02/03',1 ,1,45782000,45286057),
 	   (27542,2,98210,'2020/02/03',1 ,1,45782000,45286057),
        (27543,2,78810,'2015/01/08', 1, 2,52003650,52369945);
+
+insert into Persona
+values ('Jose', '1999/10/11', '984446906', '28 de Julio', 800, 21, 'JosePedroza99@gmail.com', 'Pedroza', 'Gutierrez', 1,48220935),
+('Manuel','2000/05/20','992514088','Balta',95,30,'manuelpe_0520@gmail.com', 'Pedroza','Diaz',1,20114000),
+('Mario','1995/11/15','962235611','Caquetá',233,124,'mariobautista@gmail.com', 'Bautista','Ruiz',1,25770588),
+('Mariano','1998/12/30','91482207','Venezuela',132,95,'marianovillar@gmail.com','Villar','Navarro',1,70459620),
+('Joe','2001/09/26','933025148','Frutales',80,65,'joe.2609@gmail.com', 'Caballero','Cruz',1,39889525),
+('Samir','1998/06/18','932658147','Parinacochas',192,105,'samircz98@gmail.com', 'Chavez','Cáceres',1,36055502),
+('Raul','1999/05/10','989014416','San Luis',54,27,'raulpariona10@gmail.com','Pariona','Acosta',1,56660322),
+('Jaime','1996/05/07','915800678','Angamos',32,10,'jaimetorres@gmail.com','Torres','Rojas',1,44999000),
+('Fernando','2001/04/09','960159753','Arenales',260,47,'fernando.07@gmaial.com','Lopez','Vera',1,55698882),
+('Alex','1998/10/02','970154820','José Pardo',140,25,'alexsaa.1002@gmail.com','Saavedra','Reyes',1,70074156),
+('Piero','1997/08/28','930256600','Salaverry',96,36,'pieromoreno@gmail.com','Moreno','Flores',1,85002100),
+('Rodrigo','2000/05/26','985421036','Tomas Valle',525,99,'rodripalomino.26@gmail.com','Palomino','Marquez',1,77675600),
+('Abel','2001/03/21','950468222','Tacna',650,142,'abel.juarez@gmail.com','Juarez','García',1,44581200),
+('Carlos','1994/02/11','940408585','Simon Bolivar',401,45,'carlitos11@gmail.com','Marchan','Quispe',1,88521033),
+('Renzo','1994/01/15','932555880','San Felipe',205,20,'renzo15_94@gmail.com','Perez','Rodriguez',1,66598215);
+
+insert into MarcaVehiculo
+values (1250,'Yamaha'),
+(8895,'Suzuki'),
+(7844,'KTM'),
+(1255,'Honda'),
+(4630,'Ronco'),
+(1002,'Pinarello'),
+(8250,'Canyon'),
+(4152,'Vermont'),
+(2203,'Ortler'),
+(6980,'Votec');
+
+insert into Vehiculo
+values (152200,'Negro',1250),
+(488701,'Rojo',6980),
+(336502,'Blanco',8895),
+(778223,'Marrón',2203),
+(966204,'Negro',1255),
+(774105,'Blanco',7844),
+(589306,'Crema',1002),
+(200587,'Rojo',4630),
+(690208,'Negro',8250),
+(415239,'Blanco',4152);
+
+insert into Repartidor 
+values (336502,44581200),
+(200587,20114000),
+(966204,44999000),
+(690208,70074156),
+(488701,70459620),
+(774105,36055502),
+(778223,48220935),
+(200587,77675600),
+(415239,66598215),
+(336502,55698882),
+(589306,39889525),
+(488701,88521033),
+(966204,85002100),
+(690208,25770588),
+(152200,56660322);
