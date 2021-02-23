@@ -282,6 +282,7 @@ CREATE TABLE Sede (
     CSede int  NOT NULL,
     NSede varchar(30)  NOT NULL,
     Distrito_CDistrito int  NOT NULL,
+	QForo int NOT NULL,
     CONSTRAINT Sede_pk PRIMARY KEY  (CSede)
 );
 
