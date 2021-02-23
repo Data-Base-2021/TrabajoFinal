@@ -210,6 +210,8 @@ CREATE TABLE Producto (
 CREATE TABLE ProductoVenta (
     CProducto int  NOT NULL,
     CVenta int  NOT NULL,
+    MParcial money  NOT NULL,
+	QProducto int  NOT NULL,
     CONSTRAINT ProductoVenta_pk PRIMARY KEY  (CProducto,CVenta)
 );
 
