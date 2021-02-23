@@ -698,7 +698,7 @@ values ('Jose', '1999/10/11', '984446906', '28 de Julio', 800, 21, 'JosePedroza9
 ('Abel','2001/03/21','950468222','Tacna',650,142,'abel.juarez@gmail.com','Juarez','García',1,44581200),
 ('Carlos','1994/02/11','940408585','Simon Bolivar',401,45,'carlitos11@gmail.com','Marchan','Quispe',1,88521033),
 ('Renzo','1994/01/15','932555880','San Felipe',205,20,'renzo15_94@gmail.com','Perez','Rodriguez',1,66598215);
-
+ 
 insert into MarcaVehiculo
 values (1250,'Yamaha'),
 (8895,'Suzuki'),
@@ -750,7 +750,7 @@ values (220584,66598215),
 (669025,85002100),
 (984550,48220935),
 (669025,70074156),
-(984550,44851200),
+(984550,44581200),
 (220584,39889525),
 (220584,56660322),
 (669025,44999000),
@@ -763,13 +763,14 @@ values (220584,66598215),
 (220584,25770588);
 
 insert into VentaVirtual
-values (12250,29895,'José Pardo',366,77675600),
-(77852,88402,'Avenida Petit Thouars',225,88521033),
-(22132,71158,'Avenida Naranjal',698,55698882),
-(44512,60025,'Avenida Arequipa',457,20114000),
-(74125,74159,'Avenida Guardia Civil',336,70459620),
-(99865,14452,'Avenida Alfonso Ugarte',445,56660322),
-(11254,33650,'Avenida Cesar Canevaro',998,48220935),
-(33658,45874,'Avenida Domingo Orué',120,25770588),
-(45963,16658,'Avenida La Molina',650,70074156),
-(36520,35489,'Avenida Sucre',588,66598215);
+values (1669,29895,'José Pardo',366,77675600),
+(2554,88402,'Avenida Petit Thouars',225,88521033),
+(9852,71158,'Avenida Naranjal',698,55698882),
+(8711,60025,'Avenida Arequipa',457,20114000),
+(8220,74159,'Avenida Guardia Civil',336,70459620),
+(7251,14452,'Avenida Alfonso Ugarte',445,56660322),
+(3557,33650,'Avenida Cesar Canevaro',998,48220935),
+(9220,45874,'Avenida Domingo Orué',120,25770588),
+(8335,16658,'Avenida La Molina',650,70074156),
+(5411,35489,'Avenida Sucre',588,66598215);
+
