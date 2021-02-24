@@ -1,0 +1,2861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PruebFInal@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.20">
+    <root id="1">
+      <ServerVersion>15.0.2080</ServerVersion>
+      <PermissionsCheckSum>52571031888</PermissionsCheckSum>
+      <Grants>0|root||1|connect sql|G
+0|root||2|view any database|G
+0|root||101|view any definition|G
+0|root||102|authenticate server|G
+0|root||102|view any definition|G
+0|root||102|view server state|G
+0|root||103|authenticate server|G
+0|root||105|control server|G
+0|root||105|view any definition|G
+0|root||106|view any definition|G
+0|root||257|connect sql|G
+0|root||257|view any definition|G
+0|root||257|view server state|G
+0|root||259|connect sql|G
+0|root||260|connect sql|G
+0|root||261|connect sql|G
+0|root||262|connect sql|G
+0|root||263|alter any availability group|G
+0|root||263|connect sql|G
+0|root||263|view server state|G
+0|root||264|connect sql|G
+0|root||265|connect sql|G
+0|root||266|connect sql|G
+0|root||267|connect sql|G
+0|root||268|alter any event session|G
+0|root||268|connect any database|G
+0|root||268|connect sql|G
+0|root||268|view any definition|G
+0|root||268|view server state|G
+0|root||269|connect sql|G
+0|root||270|connect sql|G
+0|root||271|connect sql|G
+0|root||272|connect sql|G
+2|||2|connect|G
+3|||2|connect|G
+4|||2|connect|G
+5|||2|connect|G
+</Grants>
+    </root>
+    <database id="2" parent="1" name="0TFinal_1.1">
+      <ObjectId>11</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="DWConfiguration">
+      <ObjectId>6</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="4" parent="1" name="DWDiagnostics">
+      <ObjectId>5</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="5" parent="1" name="DWQueue">
+      <ObjectId>7</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="6" parent="1" name="NORTHWND1">
+      <ObjectId>9</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="PD-08">
+      <ObjectId>8</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="PruebFInal">
+      <ObjectId>12</ObjectId>
+      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
+      <Grants>12|database||0|view any column encryption key definition|G
+12|database||0|view any column master key definition|G
+12|database||1|connect|G
+</Grants>
+      <Current>1</Current>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+      <Fingerprint>12.44250/02FC3D86-5CED-43B3-B7B6-A8E49A81B221@DESKTOP-DQOH4KT</Fingerprint>
+    </database>
+    <database id="9" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="11" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="12" parent="1" name="pruebbita">
+      <ObjectId>10</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <database id="13" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </database>
+    <login id="14" parent="1" name="sa">
+      <ObjectId>1</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="15" parent="1" name="public">
+      <ObjectId>2</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="16" parent="1" name="sysadmin">
+      <ObjectId>3</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="17" parent="1" name="securityadmin">
+      <ObjectId>4</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="18" parent="1" name="serveradmin">
+      <ObjectId>5</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="19" parent="1" name="setupadmin">
+      <ObjectId>6</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="20" parent="1" name="processadmin">
+      <ObjectId>7</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="21" parent="1" name="diskadmin">
+      <ObjectId>8</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="22" parent="1" name="dbcreator">
+      <ObjectId>9</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="23" parent="1" name="bulkadmin">
+      <ObjectId>10</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="24" parent="1" name="##MS_SQLResourceSigningCertificate##">
+      <ObjectId>101</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="25" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+      <ObjectId>102</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="26" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+      <ObjectId>103</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="27" parent="1" name="##MS_PolicySigningCertificate##">
+      <ObjectId>105</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="28" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+      <ObjectId>106</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="29" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+      <ObjectId>257</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="30" parent="1" name="DESKTOP-DQOH4KT\sebas">
+      <ObjectId>259</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="31" parent="1" name="NT SERVICE\SQLWriter">
+      <ObjectId>260</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="32" parent="1" name="NT SERVICE\Winmgmt">
+      <ObjectId>261</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="33" parent="1" name="NT Service\MSSQLSERVER">
+      <ObjectId>262</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="34" parent="1" name="NT AUTHORITY\SYSTEM">
+      <ObjectId>263</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="35" parent="1" name="NT SERVICE\SQLSERVERAGENT">
+      <ObjectId>264</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="36" parent="1" name="NT AUTHORITY\Servicio de red">
+      <ObjectId>265</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="37" parent="1" name="l_certSignSmDetach">
+      <ObjectId>266</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="38" parent="1" name="l_certSignPolyBaseAuthorize">
+      <ObjectId>267</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="39" parent="1" name="NT SERVICE\SQLTELEMETRY">
+      <ObjectId>268</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="40" parent="1" name="guest">
+      <ObjectId>269</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="41" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <ObjectId>270</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="42" parent="1" name="##MS_AgentSigningCertificate##">
+      <ObjectId>271</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="43" parent="1" name="popsql">
+      <ObjectId>272</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <schema id="44" parent="8" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="45" parent="8" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="46" parent="8" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="47" parent="8" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="48" parent="8" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="49" parent="8" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="50" parent="8" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="51" parent="8" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="52" parent="8" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="53" parent="8" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="54" parent="8" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2021-02-24.09:48:14.170</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="55" parent="8" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="56" parent="8" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <role id="57" parent="8" name="public">
+      <ObjectId>0</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="58" parent="8" name="dbo">
+      <ObjectId>1</ObjectId>
+      <DefaultSchema>dbo</DefaultSchema>
+      <AuthType>instance</AuthType>
+    </role>
+    <role id="59" parent="8" name="guest">
+      <ObjectId>2</ObjectId>
+      <DefaultSchema>guest</DefaultSchema>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="60" parent="8" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="61" parent="8" name="sys">
+      <ObjectId>4</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="62" parent="8" name="db_owner">
+      <ObjectId>16384</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="63" parent="8" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="64" parent="8" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="65" parent="8" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="66" parent="8" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="67" parent="8" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="68" parent="8" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="69" parent="8" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="70" parent="8" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <table id="71" parent="54" name="Activador">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+    </table>
+    <table id="72" parent="54" name="Campania">
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="73" parent="54" name="Categoria">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+    </table>
+    <table id="74" parent="54" name="Compra_Proveedor">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="75" parent="54" name="Departamento">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+    </table>
+    <table id="76" parent="54" name="Detalle_Compra">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:29:34.410</ModifiedTimestamp>
+    </table>
+    <table id="77" parent="54" name="Dia">
+      <ObjectId>773577794</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+    </table>
+    <table id="78" parent="54" name="Distrito">
+      <ObjectId>805577908</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="79" parent="54" name="Empleado">
+      <ObjectId>837578022</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="80" parent="54" name="HistorialProductos">
+      <ObjectId>978102525</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:35:37</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:35:37</ModifiedTimestamp>
+    </table>
+    <table id="81" parent="54" name="Horario_Sede">
+      <ObjectId>869578136</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+    </table>
+    <table id="82" parent="54" name="Inscripcion">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+    </table>
+    <table id="83" parent="54" name="Marca">
+      <ObjectId>933578364</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+    </table>
+    <table id="84" parent="54" name="MarcaVehiculo">
+      <ObjectId>965578478</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="85" parent="54" name="Metodo_Pago">
+      <ObjectId>997578592</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="86" parent="54" name="Modelo">
+      <ObjectId>1029578706</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+    </table>
+    <table id="87" parent="54" name="ObjeticoFit">
+      <ObjectId>1061578820</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="88" parent="54" name="Persona">
+      <ObjectId>1093578934</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+    </table>
+    <table id="89" parent="54" name="Plan">
+      <ObjectId>1125579048</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+    </table>
+    <table id="90" parent="54" name="PlanCampania">
+      <ObjectId>1157579162</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+    </table>
+    <table id="91" parent="54" name="PlanSede">
+      <ObjectId>1189579276</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+    </table>
+    <table id="92" parent="54" name="Plataforma">
+      <ObjectId>1221579390</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+    </table>
+    <table id="93" parent="54" name="PresencialCamp">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+    </table>
+    <table id="94" parent="54" name="Producto">
+      <ObjectId>1285579618</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:35:49.233</ModifiedTimestamp>
+    </table>
+    <table id="95" parent="54" name="ProductoVenta">
+      <ObjectId>1317579732</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:30:00.640</ModifiedTimestamp>
+    </table>
+    <table id="96" parent="54" name="Proveedor">
+      <ObjectId>1349579846</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+    </table>
+    <table id="97" parent="54" name="Provincia">
+      <ObjectId>1381579960</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+    </table>
+    <table id="98" parent="54" name="PuestoTrabajo">
+      <ObjectId>1413580074</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+    </table>
+    <table id="99" parent="54" name="RegistroInvitado">
+      <ObjectId>1445580188</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+    </table>
+    <table id="100" parent="54" name="Repartidor">
+      <ObjectId>1477580302</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="101" parent="54" name="ReservaHorario">
+      <ObjectId>1509580416</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="102" parent="54" name="Rol">
+      <ObjectId>1541580530</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+    </table>
+    <table id="103" parent="54" name="RutaRepartidor">
+      <ObjectId>1573580644</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+    </table>
+    <table id="104" parent="54" name="Sede">
+      <ObjectId>1605580758</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="105" parent="54" name="SubCategoria">
+      <ObjectId>1637580872</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+    </table>
+    <table id="106" parent="54" name="TipoPublicidad">
+      <ObjectId>1669580986</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+    </table>
+    <table id="107" parent="54" name="Tipo_Documento">
+      <ObjectId>1701581100</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+    </table>
+    <table id="108" parent="54" name="TurnoTrabajo">
+      <ObjectId>1733581214</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+    </table>
+    <table id="109" parent="54" name="Usuario">
+      <ObjectId>1765581328</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+    </table>
+    <table id="110" parent="54" name="Vehiculo">
+      <ObjectId>1797581442</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+    </table>
+    <table id="111" parent="54" name="Venta">
+      <ObjectId>1829581556</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.060</ModifiedTimestamp>
+    </table>
+    <table id="112" parent="54" name="VentaPresencial">
+      <ObjectId>1861581670</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+    </table>
+    <table id="113" parent="54" name="VentaVirtual">
+      <ObjectId>1893581784</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.057</ModifiedTimestamp>
+    </table>
+    <table id="114" parent="54" name="VirtualCamp">
+      <ObjectId>1925581898</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.057</ModifiedTimestamp>
+    </table>
+    <table id="115" parent="54" name="VirtualPlataforma">
+      <ObjectId>1957582012</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.057</ModifiedTimestamp>
+    </table>
+    <table id="116" parent="54" name="Zona">
+      <ObjectId>1989582126</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+    </table>
+    <table id="117" parent="54" name="ZonaRepartidor">
+      <ObjectId>2021582240</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+    </table>
+    <view id="118" parent="54" name="vw_QAsistentes_Hora_Sede_">
+      <ObjectId>818101955</ObjectId>
+      <SourceTextLength>248</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:24:11.110</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:24:11.110</ModifiedTimestamp>
+    </view>
+    <view id="119" parent="54" name="vw_mONTOtOTALcAMPAÑAS">
+      <ObjectId>882102183</ObjectId>
+      <SourceTextLength>215</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:27:13.640</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:27:13.640</ModifiedTimestamp>
+    </view>
+    <view id="120" parent="54" name="vw_montoPorProducto_">
+      <ObjectId>850102069</ObjectId>
+      <SourceTextLength>237</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:25:27.970</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:25:27.970</ModifiedTimestamp>
+    </view>
+    <view id="121" parent="54" name="vw_vecesqunproductocambia_">
+      <ObjectId>1010102639</ObjectId>
+      <SourceTextLength>162</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:36:04.090</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:36:04.090</ModifiedTimestamp>
+    </view>
+    <routine id="122" parent="54" name="fn_ObtenerRentabilidad_">
+      <ObjectId>866102126</ObjectId>
+      <SourceTextLength>899</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:25:48.157</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:25:48.157</ModifiedTimestamp>
+      <RoutineType>tab-fun</RoutineType>
+    </routine>
+    <routine id="123" parent="54" name="pr_CalcularCantidadAsistentes">
+      <ObjectId>834102012</ObjectId>
+      <SourceTextLength>518</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:24:15.293</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:24:15.293</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="124" parent="54" name="pr_Pivot_MontoCampañas_">
+      <ObjectId>898102240</ObjectId>
+      <SourceTextLength>254</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:27:17.740</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:27:17.740</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="125" parent="54" name="pr_PrimervALORmONTOcAMPAÑA_">
+      <ObjectId>914102297</ObjectId>
+      <SourceTextLength>283</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:28:05.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:28:05.013</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="126" parent="54" name="pr_productoQuemascambio_">
+      <ObjectId>1026102696</ObjectId>
+      <SourceTextLength>854</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:37:47.103</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:37:47.103</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="127" parent="54" name="pr_ultimovalorcampaña_">
+      <ObjectId>930102354</ObjectId>
+      <SourceTextLength>286</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:28:09.090</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:28:09.090</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="128" parent="71" name="CRol">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="71" name="CActivador">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="130" parent="71" name="Activador_pk">
+      <Position>1</Position>
+      <ColNames>CActivador</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="131" parent="71" name="Activador_pk">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.987</ModifiedTimestamp>
+      <ColNames>CActivador</ColNames>
+      <UnderlyingIndexName>Activador_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="132" parent="71" name="Activadores_ROL">
+      <ObjectId>2069582411</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CRol</ColNames>
+      <RefTableId>1541580530</RefTableId>
+      <RefTableName>Rol</RefTableName>
+      <RefKeyName>Rol_pk</RefKeyName>
+      <RefColNames>CRol</RefColNames>
+    </foreign-key>
+    <foreign-key id="133" parent="71" name="Activador_Persona">
+      <ObjectId>2053582354</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.017</ModifiedTimestamp>
+      <ColNames>CActivador</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <column id="134" parent="72" name="CCampania">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="72" name="MInvertido">
+      <Position>2</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="72" name="DInicio">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="72" name="DFinal">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="72" name="numAlcance">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="139" parent="72" name="NCampania">
+      <Position>6</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="140" parent="72" name="Campania_pk">
+      <Position>1</Position>
+      <ColNames>CCampania</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="141" parent="72" name="Campania_pk">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.987</ModifiedTimestamp>
+      <ColNames>CCampania</ColNames>
+      <UnderlyingIndexName>Campania_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="142" parent="73" name="CCategoria">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="143" parent="73" name="NCategoria">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="144" parent="73" name="Categoria_pk">
+      <Position>1</Position>
+      <ColNames>CCategoria</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="145" parent="73" name="Categoria_pk">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.987</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.987</ModifiedTimestamp>
+      <ColNames>CCategoria</ColNames>
+      <UnderlyingIndexName>Categoria_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="146" parent="74" name="CProveedor">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="74" name="CSede">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="74" name="CCompra">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="149" parent="74" name="DCompra">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="150" parent="74" name="MTotal">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="151" parent="74" name="Compra_Proveedor_pk">
+      <Position>1</Position>
+      <ColNames>CCompra</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="74" name="Compra_Proveedor_pk">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CCompra</ColNames>
+      <UnderlyingIndexName>Compra_Proveedor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="153" parent="74" name="Table_44_Proveedor">
+      <ObjectId>482100758</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>CProveedor</ColNames>
+      <RefTableId>1349579846</RefTableId>
+      <RefTableName>Proveedor</RefTableName>
+      <RefKeyName>Proveedor_pk</RefKeyName>
+      <RefColNames>CProveedor</RefColNames>
+    </foreign-key>
+    <foreign-key id="154" parent="74" name="Table_44_Sede">
+      <ObjectId>498100815</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.043</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <column id="155" parent="75" name="CDepartamento">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="156" parent="75" name="NDepartamento">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="157" parent="75" name="Departamento_pk">
+      <Position>1</Position>
+      <ColNames>CDepartamento</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="158" parent="75" name="Departamento_pk">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CDepartamento</ColNames>
+      <UnderlyingIndexName>Departamento_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="159" parent="76" name="CProducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="76" name="CCompra">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="76" name="QProducto">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="162" parent="76" name="MParcial">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="163" parent="76" name="Detalle_Compra_pk">
+      <Position>1</Position>
+      <ColNames>CProducto
+CCompra</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="164" parent="76" name="Detalle_Compra_pk">
+      <ObjectId>757577737</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CProducto
+CCompra</ColNames>
+      <UnderlyingIndexName>Detalle_Compra_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="165" parent="76" name="Table_45_Producto">
+      <ObjectId>530100929</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.043</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+      <ColNames>CProducto</ColNames>
+      <RefTableId>1285579618</RefTableId>
+      <RefTableName>Producto</RefTableName>
+      <RefKeyName>Producto_pk</RefKeyName>
+      <RefColNames>CProducto</RefColNames>
+    </foreign-key>
+    <foreign-key id="166" parent="76" name="Table_45_Pedido_Proveedor">
+      <ObjectId>514100872</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.043</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+      <ColNames>CCompra</ColNames>
+      <RefTableId>677577452</RefTableId>
+      <RefTableName>Compra_Proveedor</RefTableName>
+      <RefKeyName>Compra_Proveedor_pk</RefKeyName>
+      <RefColNames>CCompra</RefColNames>
+    </foreign-key>
+    <trigger id="167" parent="76" name="tr_ActualizarStock">
+      <ObjectId>946102411</ObjectId>
+      <SourceTextLength>247</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:29:34.410</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:29:34.410</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="168" parent="77" name="CDia">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="169" parent="77" name="NDia">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="170" parent="77" name="Dia_pk">
+      <Position>1</Position>
+      <ColNames>CDia</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="171" parent="77" name="Dia_pk">
+      <ObjectId>789577851</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CDia</ColNames>
+      <UnderlyingIndexName>Dia_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="172" parent="78" name="CDistrito">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="173" parent="78" name="NDistrito">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="174" parent="78" name="CProvincia">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="175" parent="78" name="Distrito_pk">
+      <Position>1</Position>
+      <ColNames>CDistrito</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="176" parent="78" name="Distrito_pk">
+      <ObjectId>821577965</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CDistrito</ColNames>
+      <UnderlyingIndexName>Distrito_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="177" parent="78" name="Distrito_Provincia">
+      <ObjectId>2085582468</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CProvincia</ColNames>
+      <RefTableId>1381579960</RefTableId>
+      <RefTableName>Provincia</RefTableName>
+      <RefKeyName>Provincia_pk</RefKeyName>
+      <RefColNames>CProvincia</RefColNames>
+    </foreign-key>
+    <column id="178" parent="79" name="DIncioContrato">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="179" parent="79" name="DFinalContrato">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="180" parent="79" name="TCorreoLaboral">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="181" parent="79" name="CSede">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="182" parent="79" name="CTurno">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="183" parent="79" name="CPuesto">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="184" parent="79" name="CEmpleado">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="185" parent="79" name="CJefe">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="186" parent="79" name="Empleado_pk">
+      <Position>1</Position>
+      <ColNames>CEmpleado</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="187" parent="79" name="Empleado_pk">
+      <ObjectId>853578079</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.990</ModifiedTimestamp>
+      <ColNames>CEmpleado</ColNames>
+      <UnderlyingIndexName>Empleado_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="188" parent="79" name="Empleado_Sede">
+      <ObjectId>2099048</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <foreign-key id="189" parent="79" name="Empleado_TurnoTrabajo">
+      <ObjectId>18099105</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.023</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+      <ColNames>CTurno</ColNames>
+      <RefTableId>1733581214</RefTableId>
+      <RefTableName>TurnoTrabajo</RefTableName>
+      <RefKeyName>TurnoTrabajo_pk</RefKeyName>
+      <RefColNames>CTurno</RefColNames>
+    </foreign-key>
+    <foreign-key id="190" parent="79" name="Empleado_PuestoTrabajo">
+      <ObjectId>2133582639</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CPuesto</ColNames>
+      <RefTableId>1413580074</RefTableId>
+      <RefTableName>PuestoTrabajo</RefTableName>
+      <RefKeyName>PuestoTrabajo_pk</RefKeyName>
+      <RefColNames>CPuesto</RefColNames>
+    </foreign-key>
+    <foreign-key id="191" parent="79" name="Empleado_Persona">
+      <ObjectId>2117582582</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CEmpleado</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <foreign-key id="192" parent="79" name="Empleado_Empleado">
+      <ObjectId>2101582525</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.020</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.020</ModifiedTimestamp>
+      <ColNames>CJefe</ColNames>
+      <RefTableId>837578022</RefTableId>
+      <RefTableName>Empleado</RefTableName>
+      <RefKeyName>Empleado_pk</RefKeyName>
+      <RefColNames>CEmpleado</RefColNames>
+    </foreign-key>
+    <column id="193" parent="80" name="Dmodificacion">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="194" parent="80" name="UsuarioModificacion">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="195" parent="80" name="cproducto">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="196" parent="80" name="ant_nproducto">
+      <Position>4</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="197" parent="80" name="new_nproducto">
+      <Position>5</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="198" parent="80" name="ant_precio">
+      <Position>6</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="199" parent="80" name="new_precio">
+      <Position>7</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="200" parent="81" name="CSede">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="201" parent="81" name="CDia">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="202" parent="81" name="DApertura">
+      <Position>3</Position>
+      <DataType>time(2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="203" parent="81" name="DCierre">
+      <Position>4</Position>
+      <DataType>time(2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="204" parent="81" name="Horario_Sede_pk">
+      <Position>1</Position>
+      <ColNames>CDia
+CSede</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="205" parent="81" name="Horario_Sede_pk">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.993</ModifiedTimestamp>
+      <ColNames>CDia
+CSede</ColNames>
+      <UnderlyingIndexName>Horario_Sede_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="206" parent="81" name="Horario_Sede_Sede">
+      <ObjectId>50099219</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.023</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <foreign-key id="207" parent="81" name="Horario_Sede_Dia">
+      <ObjectId>34099162</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.023</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+      <ColNames>CDia</ColNames>
+      <RefTableId>773577794</RefTableId>
+      <RefTableName>Dia</RefTableName>
+      <RefKeyName>Dia_pk</RefKeyName>
+      <RefColNames>CDia</RefColNames>
+    </foreign-key>
+    <column id="208" parent="82" name="CInscripcion">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="209" parent="82" name="CPlan">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="210" parent="82" name="CSede">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="211" parent="82" name="DIncripcion">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="212" parent="82" name="FCampania">
+      <Position>5</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="213" parent="82" name="CMetodoPago">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="214" parent="82" name="CEmpleado">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="215" parent="82" name="CUsuario">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="216" parent="82" name="Inscripcion_pk">
+      <Position>1</Position>
+      <ColNames>CInscripcion
+DIncripcion</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="217" parent="82" name="Inscripcion_pk">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.993</ModifiedTimestamp>
+      <ColNames>CInscripcion
+DIncripcion</ColNames>
+      <UnderlyingIndexName>Inscripcion_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="218" parent="82" name="Registro_Inscripcion_PlanSede">
+      <ObjectId>338100245</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.037</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+      <ColNames>CPlan
+CSede</ColNames>
+      <RefTableId>1189579276</RefTableId>
+      <RefTableName>PlanSede</RefTableName>
+      <RefKeyName>PlanSede_pk</RefKeyName>
+      <RefColNames>CPlan
+CSede</RefColNames>
+    </foreign-key>
+    <foreign-key id="219" parent="82" name="Inscripcion_Metodo_Pago">
+      <ObjectId>82099333</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.027</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+      <ColNames>CMetodoPago</ColNames>
+      <RefTableId>997578592</RefTableId>
+      <RefTableName>Metodo_Pago</RefTableName>
+      <RefKeyName>Metodo_Pago_pk</RefKeyName>
+      <RefColNames>CMetodoPago</RefColNames>
+    </foreign-key>
+    <foreign-key id="220" parent="82" name="Inscripcion_Empleado">
+      <ObjectId>66099276</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.023</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.023</ModifiedTimestamp>
+      <ColNames>CEmpleado</ColNames>
+      <RefTableId>837578022</RefTableId>
+      <RefTableName>Empleado</RefTableName>
+      <RefKeyName>Empleado_pk</RefKeyName>
+      <RefColNames>CEmpleado</RefColNames>
+    </foreign-key>
+    <foreign-key id="221" parent="82" name="Inscripcion_Usuario">
+      <ObjectId>98099390</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.027</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+      <ColNames>CUsuario</ColNames>
+      <RefTableId>1765581328</RefTableId>
+      <RefTableName>Usuario</RefTableName>
+      <RefKeyName>Usuario_pk</RefKeyName>
+      <RefColNames>CUsuario</RefColNames>
+    </foreign-key>
+    <column id="222" parent="83" name="CMarca">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="223" parent="83" name="NMarca">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="224" parent="83" name="Marca_pk">
+      <Position>1</Position>
+      <ColNames>CMarca</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="225" parent="83" name="Marca_pk">
+      <ObjectId>949578421</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.993</ModifiedTimestamp>
+      <ColNames>CMarca</ColNames>
+      <UnderlyingIndexName>Marca_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="226" parent="84" name="CMarcaVehiculo">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="227" parent="84" name="NMarcaVehiculo">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="228" parent="84" name="MarcaVehiculo_pk">
+      <Position>1</Position>
+      <ColNames>CMarcaVehiculo</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="229" parent="84" name="MarcaVehiculo_pk">
+      <ObjectId>981578535</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.993</ModifiedTimestamp>
+      <ColNames>CMarcaVehiculo</ColNames>
+      <UnderlyingIndexName>MarcaVehiculo_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="230" parent="85" name="CMetodoPago">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="231" parent="85" name="NFormaPago">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="232" parent="85" name="Metodo_Pago_pk">
+      <Position>1</Position>
+      <ColNames>CMetodoPago</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="233" parent="85" name="Metodo_Pago_pk">
+      <ObjectId>1013578649</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.997</ModifiedTimestamp>
+      <ColNames>CMetodoPago</ColNames>
+      <UnderlyingIndexName>Metodo_Pago_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="234" parent="86" name="CModelo">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="235" parent="86" name="NModelo">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="236" parent="86" name="CMarca">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="237" parent="86" name="Modelo_pk">
+      <Position>1</Position>
+      <ColNames>CModelo</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="238" parent="86" name="Modelo_pk">
+      <ObjectId>1045578763</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.997</ModifiedTimestamp>
+      <ColNames>CModelo</ColNames>
+      <UnderlyingIndexName>Modelo_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="239" parent="86" name="Modelo_Marca">
+      <ObjectId>130099504</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.027</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+      <ColNames>CMarca</ColNames>
+      <RefTableId>933578364</RefTableId>
+      <RefTableName>Marca</RefTableName>
+      <RefKeyName>Marca_pk</RefKeyName>
+      <RefColNames>CMarca</RefColNames>
+    </foreign-key>
+    <column id="240" parent="87" name="CObjetivoFit">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="241" parent="87" name="NObjetivoUsuario">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="242" parent="87" name="ObjeticoFit_pk">
+      <Position>1</Position>
+      <ColNames>CObjetivoFit</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="243" parent="87" name="ObjeticoFit_pk">
+      <ObjectId>1077578877</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.997</ModifiedTimestamp>
+      <ColNames>CObjetivoFit</ColNames>
+      <UnderlyingIndexName>ObjeticoFit_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="244" parent="88" name="NPersona">
+      <Position>1</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="245" parent="88" name="DFechaNacimiento">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="246" parent="88" name="NumTelefono">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="247" parent="88" name="TAvenida">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="248" parent="88" name="NumLote">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="249" parent="88" name="NumMz">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="250" parent="88" name="TCorreoElectronico">
+      <Position>7</Position>
+      <DataType>nvarchar(100 char)|0s</DataType>
+    </column>
+    <column id="251" parent="88" name="NApellidoPaterno">
+      <Position>8</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="252" parent="88" name="NApellidoMaterno">
+      <Position>9</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="253" parent="88" name="CTipoDocumento">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="254" parent="88" name="CPersona">
+      <Position>11</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="255" parent="88" name="Persona_pk">
+      <Position>1</Position>
+      <ColNames>CPersona</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="256" parent="88" name="Persona_pk">
+      <ObjectId>1109578991</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:46.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:46.997</ModifiedTimestamp>
+      <ColNames>CPersona</ColNames>
+      <UnderlyingIndexName>Persona_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="257" parent="88" name="Persona_Tipo_Documento">
+      <ObjectId>146099561</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.027</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+      <ColNames>CTipoDocumento</ColNames>
+      <RefTableId>1701581100</RefTableId>
+      <RefTableName>Tipo_Documento</RefTableName>
+      <RefKeyName>Tipo_Documento_pk</RefKeyName>
+      <RefColNames>CTipoDocumento</RefColNames>
+    </foreign-key>
+    <column id="258" parent="89" name="CPlan">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="259" parent="89" name="NPlan">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="260" parent="89" name="FIncluyePolo">
+      <Position>3</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="261" parent="89" name="Fcancelacion">
+      <Position>4</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="262" parent="89" name="MmantenimientoAnual">
+      <Position>5</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="263" parent="89" name="FIncluyeInvitados">
+      <Position>6</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="264" parent="89" name="Plan_pk">
+      <Position>1</Position>
+      <ColNames>CPlan</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="265" parent="89" name="Plan_pk">
+      <ObjectId>1141579105</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CPlan</ColNames>
+      <UnderlyingIndexName>Plan_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="266" parent="90" name="CCampania">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="267" parent="90" name="CPlan">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="268" parent="90" name="PlanCampania_pk">
+      <Position>1</Position>
+      <ColNames>CCampania
+CPlan</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="269" parent="90" name="PlanCampania_pk">
+      <ObjectId>1173579219</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CCampania
+CPlan</ColNames>
+      <UnderlyingIndexName>PlanCampania_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="270" parent="90" name="Table_13_Campania">
+      <ObjectId>466100701</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>CCampania</ColNames>
+      <RefTableId>613577224</RefTableId>
+      <RefTableName>Campania</RefTableName>
+      <RefKeyName>Campania_pk</RefKeyName>
+      <RefColNames>CCampania</RefColNames>
+    </foreign-key>
+    <foreign-key id="271" parent="90" name="PlanCampania_CPlanes">
+      <ObjectId>162099618</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CPlan</ColNames>
+      <RefTableId>1125579048</RefTableId>
+      <RefTableName>Plan</RefTableName>
+      <RefKeyName>Plan_pk</RefKeyName>
+      <RefColNames>CPlan</RefColNames>
+    </foreign-key>
+    <column id="272" parent="91" name="CPlan">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="273" parent="91" name="CSede">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="91" name="MPrecio">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="275" parent="91" name="PlanSede_pk">
+      <Position>1</Position>
+      <ColNames>CPlan
+CSede</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="276" parent="91" name="PlanSede_pk">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CPlan
+CSede</ColNames>
+      <UnderlyingIndexName>PlanSede_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="277" parent="91" name="PlanSede_CPlanes">
+      <ObjectId>178099675</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CPlan</ColNames>
+      <RefTableId>1125579048</RefTableId>
+      <RefTableName>Plan</RefTableName>
+      <RefKeyName>Plan_pk</RefKeyName>
+      <RefColNames>CPlan</RefColNames>
+    </foreign-key>
+    <foreign-key id="278" parent="91" name="PlanSede_Sede">
+      <ObjectId>194099732</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <column id="279" parent="92" name="CPlataforma">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="280" parent="92" name="NPlataforma">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="281" parent="92" name="Plataforma_pk">
+      <Position>1</Position>
+      <ColNames>CPlataforma</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="282" parent="92" name="Plataforma_pk">
+      <ObjectId>1237579447</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CPlataforma</ColNames>
+      <UnderlyingIndexName>Plataforma_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="283" parent="93" name="CPresencialCamp">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="284" parent="93" name="CZona">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="285" parent="93" name="CActivador">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="286" parent="93" name="PresencialCamp_pk">
+      <Position>1</Position>
+      <ColNames>CPresencialCamp
+CZona</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="287" parent="93" name="PresencialCamp_pk">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CPresencialCamp
+CZona</ColNames>
+      <UnderlyingIndexName>PresencialCamp_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="288" parent="93" name="Table_8_Campania">
+      <ObjectId>546100986</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.043</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+      <ColNames>CPresencialCamp</ColNames>
+      <RefTableId>613577224</RefTableId>
+      <RefTableName>Campania</RefTableName>
+      <RefKeyName>Campania_pk</RefKeyName>
+      <RefColNames>CCampania</RefColNames>
+    </foreign-key>
+    <foreign-key id="289" parent="93" name="PresencialCamp_Zona">
+      <ObjectId>226099846</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CZona</ColNames>
+      <RefTableId>1989582126</RefTableId>
+      <RefTableName>Zona</RefTableName>
+      <RefKeyName>Zona_pk</RefKeyName>
+      <RefColNames>CZona</RefColNames>
+    </foreign-key>
+    <foreign-key id="290" parent="93" name="PresencialCamp_Activador">
+      <ObjectId>210099789</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CActivador</ColNames>
+      <RefTableId>581577110</RefTableId>
+      <RefTableName>Activador</RefTableName>
+      <RefKeyName>Activador_pk</RefKeyName>
+      <RefColNames>CActivador</RefColNames>
+    </foreign-key>
+    <column id="291" parent="94" name="CProducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="292" parent="94" name="NProducto">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="94" name="MPrecio">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="294" parent="94" name="CModelo">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="295" parent="94" name="CSubCategoria">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="296" parent="94" name="stock">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="297" parent="94" name="Producto_pk">
+      <Position>1</Position>
+      <ColNames>CProducto</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="298" parent="94" name="Producto_pk">
+      <ObjectId>1301579675</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47</ModifiedTimestamp>
+      <ColNames>CProducto</ColNames>
+      <UnderlyingIndexName>Producto_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="299" parent="94" name="Producto_Modelo">
+      <ObjectId>274100017</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.033</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+      <ColNames>CModelo</ColNames>
+      <RefTableId>1029578706</RefTableId>
+      <RefTableName>Modelo</RefTableName>
+      <RefKeyName>Modelo_pk</RefKeyName>
+      <RefColNames>CModelo</RefColNames>
+    </foreign-key>
+    <foreign-key id="300" parent="94" name="Producto_SubCategoria">
+      <ObjectId>290100074</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.033</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+      <ColNames>CSubCategoria</ColNames>
+      <RefTableId>1637580872</RefTableId>
+      <RefTableName>SubCategoria</RefTableName>
+      <RefKeyName>SubCategoria_pk</RefKeyName>
+      <RefColNames>CSubCategoria</RefColNames>
+    </foreign-key>
+    <trigger id="301" parent="94" name="tr_HistorialProducto">
+      <ObjectId>994102582</ObjectId>
+      <SourceTextLength>701</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:35:49.233</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:35:49.233</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="302" parent="95" name="CProducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="303" parent="95" name="CVenta">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="304" parent="95" name="MParcial">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="305" parent="95" name="QProducto">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="306" parent="95" name="ProductoVenta_pk">
+      <Position>1</Position>
+      <ColNames>CProducto
+CVenta</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="307" parent="95" name="ProductoVenta_pk">
+      <ObjectId>1333579789</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.003</ModifiedTimestamp>
+      <ColNames>CProducto
+CVenta</ColNames>
+      <UnderlyingIndexName>ProductoVenta_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="308" parent="95" name="ProductoVenta_Producto">
+      <ObjectId>242099903</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.030</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.030</ModifiedTimestamp>
+      <ColNames>CProducto</ColNames>
+      <RefTableId>1285579618</RefTableId>
+      <RefTableName>Producto</RefTableName>
+      <RefKeyName>Producto_pk</RefKeyName>
+      <RefColNames>CProducto</RefColNames>
+    </foreign-key>
+    <foreign-key id="309" parent="95" name="ProductoVenta_Venta">
+      <ObjectId>258099960</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.033</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+      <ColNames>CVenta</ColNames>
+      <RefTableId>1829581556</RefTableId>
+      <RefTableName>Venta</RefTableName>
+      <RefKeyName>Venta_pk</RefKeyName>
+      <RefColNames>CVenta</RefColNames>
+    </foreign-key>
+    <trigger id="310" parent="95" name="tr_ActuStock">
+      <ObjectId>962102468</ObjectId>
+      <SourceTextLength>238</SourceTextLength>
+      <CreatedTimestamp>2021-02-24.09:30:00.640</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:30:00.640</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="311" parent="96" name="CProveedor">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="312" parent="96" name="NProveedor">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="313" parent="96" name="NumbProveedor">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="314" parent="96" name="Proveedor_pk">
+      <Position>1</Position>
+      <ColNames>CProveedor</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="315" parent="96" name="Proveedor_pk">
+      <ObjectId>1365579903</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.003</ModifiedTimestamp>
+      <ColNames>CProveedor</ColNames>
+      <UnderlyingIndexName>Proveedor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="316" parent="97" name="CProvincia">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="317" parent="97" name="NProvincia">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="318" parent="97" name="CDepartamento">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="319" parent="97" name="Provincia_pk">
+      <Position>1</Position>
+      <ColNames>CProvincia</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="320" parent="97" name="Provincia_pk">
+      <ObjectId>1397580017</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.003</ModifiedTimestamp>
+      <ColNames>CProvincia</ColNames>
+      <UnderlyingIndexName>Provincia_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="321" parent="97" name="Provincia_Departamento">
+      <ObjectId>306100131</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.033</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+      <ColNames>CDepartamento</ColNames>
+      <RefTableId>709577566</RefTableId>
+      <RefTableName>Departamento</RefTableName>
+      <RefKeyName>Departamento_pk</RefKeyName>
+      <RefColNames>CDepartamento</RefColNames>
+    </foreign-key>
+    <column id="322" parent="98" name="CPuesto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="323" parent="98" name="NPuesto">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="324" parent="98" name="PuestoTrabajo_pk">
+      <Position>1</Position>
+      <ColNames>CPuesto</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="325" parent="98" name="PuestoTrabajo_pk">
+      <ObjectId>1429580131</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.003</ModifiedTimestamp>
+      <ColNames>CPuesto</ColNames>
+      <UnderlyingIndexName>PuestoTrabajo_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="326" parent="99" name="CReservaHorario">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="327" parent="99" name="CInvitado">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="328" parent="99" name="RegistroInvitado_pk">
+      <Position>1</Position>
+      <ColNames>CReservaHorario
+CInvitado</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="329" parent="99" name="RegistroInvitado_pk">
+      <ObjectId>1461580245</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.007</ModifiedTimestamp>
+      <ColNames>CReservaHorario
+CInvitado</ColNames>
+      <UnderlyingIndexName>RegistroInvitado_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="330" parent="99" name="Invitados_ReservaHorario">
+      <ObjectId>114099447</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.027</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.027</ModifiedTimestamp>
+      <ColNames>CReservaHorario</ColNames>
+      <RefTableId>1509580416</RefTableId>
+      <RefTableName>ReservaHorario</RefTableName>
+      <RefKeyName>ReservaHorario_pk</RefKeyName>
+      <RefColNames>CReservaHorario</RefColNames>
+    </foreign-key>
+    <foreign-key id="331" parent="99" name="RegistroInvitado_Persona">
+      <ObjectId>322100188</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.033</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.033</ModifiedTimestamp>
+      <ColNames>CInvitado</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <column id="332" parent="100" name="CVehiculo">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="333" parent="100" name="CRepartidor">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="334" parent="100" name="Repartidor_pk">
+      <Position>1</Position>
+      <ColNames>CRepartidor</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="335" parent="100" name="Repartidor_pk">
+      <ObjectId>1493580359</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.007</ModifiedTimestamp>
+      <ColNames>CRepartidor</ColNames>
+      <UnderlyingIndexName>Repartidor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="336" parent="100" name="Repartidor_Vehiculo">
+      <ObjectId>370100359</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.037</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+      <ColNames>CVehiculo</ColNames>
+      <RefTableId>1797581442</RefTableId>
+      <RefTableName>Vehiculo</RefTableName>
+      <RefKeyName>Vehiculo_pk</RefKeyName>
+      <RefColNames>CVehiculo</RefColNames>
+    </foreign-key>
+    <foreign-key id="337" parent="100" name="Repartidor_Persona">
+      <ObjectId>354100302</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.037</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+      <ColNames>CRepartidor</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <column id="338" parent="101" name="CSede">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="339" parent="101" name="CReservaHorario">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="340" parent="101" name="FDisponible">
+      <Position>3</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="341" parent="101" name="DRegistro">
+      <Position>4</Position>
+      <DataType>smalldatetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="342" parent="101" name="FReservaActiva">
+      <Position>5</Position>
+      <DataType>binary(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="343" parent="101" name="CUsuario">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="344" parent="101" name="ReservaHorario_pk">
+      <Position>1</Position>
+      <ColNames>CReservaHorario</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="345" parent="101" name="ReservaHorario_pk">
+      <ObjectId>1525580473</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.007</ModifiedTimestamp>
+      <ColNames>CReservaHorario</ColNames>
+      <UnderlyingIndexName>ReservaHorario_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="346" parent="101" name="UsuarioHorario_Sede">
+      <ObjectId>578101100</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <foreign-key id="347" parent="101" name="ReservaHorario_Usuario">
+      <ObjectId>386100416</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.037</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.037</ModifiedTimestamp>
+      <ColNames>CUsuario</ColNames>
+      <RefTableId>1765581328</RefTableId>
+      <RefTableName>Usuario</RefTableName>
+      <RefKeyName>Usuario_pk</RefKeyName>
+      <RefColNames>CUsuario</RefColNames>
+    </foreign-key>
+    <column id="348" parent="102" name="CRol">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="349" parent="102" name="NRol">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="350" parent="102" name="Rol_pk">
+      <Position>1</Position>
+      <ColNames>CRol</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="351" parent="102" name="Rol_pk">
+      <ObjectId>1557580587</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.007</ModifiedTimestamp>
+      <ColNames>CRol</ColNames>
+      <UnderlyingIndexName>Rol_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="352" parent="103" name="CZona">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="353" parent="103" name="CRepartidor">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="354" parent="103" name="RutaRepartidor_pk">
+      <Position>1</Position>
+      <ColNames>CZona
+CRepartidor</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="355" parent="103" name="RutaRepartidor_pk">
+      <ObjectId>1589580701</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.007</ModifiedTimestamp>
+      <ColNames>CZona
+CRepartidor</ColNames>
+      <UnderlyingIndexName>RutaRepartidor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="356" parent="103" name="RutaRepartidor_ZonaRepartidor">
+      <ObjectId>418100530</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>CZona</ColNames>
+      <RefTableId>2021582240</RefTableId>
+      <RefTableName>ZonaRepartidor</RefTableName>
+      <RefKeyName>ZonaRepartidor_pk</RefKeyName>
+      <RefColNames>CZona</RefColNames>
+    </foreign-key>
+    <foreign-key id="357" parent="103" name="RutaRepartidor_Repartidor">
+      <ObjectId>402100473</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>CRepartidor</ColNames>
+      <RefTableId>1477580302</RefTableId>
+      <RefTableName>Repartidor</RefTableName>
+      <RefKeyName>Repartidor_pk</RefKeyName>
+      <RefColNames>CRepartidor</RefColNames>
+    </foreign-key>
+    <column id="358" parent="104" name="CSede">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="359" parent="104" name="NSede">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="360" parent="104" name="Distrito_CDistrito">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="361" parent="104" name="QAforo">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="362" parent="104" name="Sede_pk">
+      <Position>1</Position>
+      <ColNames>CSede</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="363" parent="104" name="Sede_pk">
+      <ObjectId>1621580815</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <UnderlyingIndexName>Sede_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="364" parent="104" name="Sede_Distrito">
+      <ObjectId>434100587</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>Distrito_CDistrito</ColNames>
+      <RefTableId>805577908</RefTableId>
+      <RefTableName>Distrito</RefTableName>
+      <RefKeyName>Distrito_pk</RefKeyName>
+      <RefColNames>CDistrito</RefColNames>
+    </foreign-key>
+    <column id="365" parent="105" name="CSubCategoria">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="366" parent="105" name="NSubCategoria">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="367" parent="105" name="CCategoria">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="368" parent="105" name="SubCategoria_pk">
+      <Position>1</Position>
+      <ColNames>CSubCategoria</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="369" parent="105" name="SubCategoria_pk">
+      <ObjectId>1653580929</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CSubCategoria</ColNames>
+      <UnderlyingIndexName>SubCategoria_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="370" parent="105" name="SubCategoria_Categoria">
+      <ObjectId>450100644</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.040</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.040</ModifiedTimestamp>
+      <ColNames>CCategoria</ColNames>
+      <RefTableId>645577338</RefTableId>
+      <RefTableName>Categoria</RefTableName>
+      <RefKeyName>Categoria_pk</RefKeyName>
+      <RefColNames>CCategoria</RefColNames>
+    </foreign-key>
+    <column id="371" parent="106" name="CTipo">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="372" parent="106" name="NTipo">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="373" parent="106" name="TipoPublicidad_pk">
+      <Position>1</Position>
+      <ColNames>CTipo</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="374" parent="106" name="TipoPublicidad_pk">
+      <ObjectId>1685581043</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CTipo</ColNames>
+      <UnderlyingIndexName>TipoPublicidad_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="375" parent="107" name="CTipoDocumento">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="376" parent="107" name="NTipoDocumento">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="377" parent="107" name="Tipo_Documento_pk">
+      <Position>1</Position>
+      <ColNames>CTipoDocumento</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="378" parent="107" name="Tipo_Documento_pk">
+      <ObjectId>1717581157</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CTipoDocumento</ColNames>
+      <UnderlyingIndexName>Tipo_Documento_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="379" parent="108" name="CTurno">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="380" parent="108" name="NTurno">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="381" parent="108" name="DIncio">
+      <Position>3</Position>
+      <DataType>time(2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="382" parent="108" name="DFinal">
+      <Position>4</Position>
+      <DataType>time(2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="383" parent="108" name="TurnoTrabajo_pk">
+      <Position>1</Position>
+      <ColNames>CTurno</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="384" parent="108" name="TurnoTrabajo_pk">
+      <ObjectId>1749581271</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CTurno</ColNames>
+      <UnderlyingIndexName>TurnoTrabajo_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="385" parent="109" name="CObjetivoFit">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="386" parent="109" name="CUsuario">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="387" parent="109" name="Usuario_pk">
+      <Position>1</Position>
+      <ColNames>CUsuario</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="388" parent="109" name="Usuario_pk">
+      <ObjectId>1781581385</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.010</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.010</ModifiedTimestamp>
+      <ColNames>CUsuario</ColNames>
+      <UnderlyingIndexName>Usuario_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="389" parent="109" name="Usuario_ObjeticoFit">
+      <ObjectId>594101157</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+      <ColNames>CObjetivoFit</ColNames>
+      <RefTableId>1061578820</RefTableId>
+      <RefTableName>ObjeticoFit</RefTableName>
+      <RefKeyName>ObjeticoFit_pk</RefKeyName>
+      <RefColNames>CObjetivoFit</RefColNames>
+    </foreign-key>
+    <foreign-key id="390" parent="109" name="Usuario_Persona">
+      <ObjectId>610101214</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+      <ColNames>CUsuario</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <column id="391" parent="110" name="CVehiculo">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="392" parent="110" name="NColorVehiculo">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="393" parent="110" name="CMarcaVehiculo">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="394" parent="110" name="Vehiculo_pk">
+      <Position>1</Position>
+      <ColNames>CVehiculo</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="395" parent="110" name="Vehiculo_pk">
+      <ObjectId>1813581499</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.013</ModifiedTimestamp>
+      <ColNames>CVehiculo</ColNames>
+      <UnderlyingIndexName>Vehiculo_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="396" parent="110" name="Vehiculo_Marca">
+      <ObjectId>626101271</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+      <ColNames>CMarcaVehiculo</ColNames>
+      <RefTableId>965578478</RefTableId>
+      <RefTableName>MarcaVehiculo</RefTableName>
+      <RefKeyName>MarcaVehiculo_pk</RefKeyName>
+      <RefColNames>CMarcaVehiculo</RefColNames>
+    </foreign-key>
+    <column id="397" parent="111" name="CVenta">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="398" parent="111" name="CPersona">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="399" parent="111" name="MTotal">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="400" parent="111" name="CMetodoPago">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="401" parent="111" name="DVenta">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="402" parent="111" name="Venta_pk">
+      <Position>1</Position>
+      <ColNames>CVenta</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="403" parent="111" name="Venta_pk">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.013</ModifiedTimestamp>
+      <ColNames>CVenta</ColNames>
+      <UnderlyingIndexName>Venta_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="404" parent="111" name="Venta_Persona">
+      <ObjectId>754101727</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+      <ColNames>CPersona</ColNames>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Persona</RefTableName>
+      <RefKeyName>Persona_pk</RefKeyName>
+      <RefColNames>CPersona</RefColNames>
+    </foreign-key>
+    <foreign-key id="405" parent="111" name="Venta_Metodo_Pago">
+      <ObjectId>738101670</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CMetodoPago</ColNames>
+      <RefTableId>997578592</RefTableId>
+      <RefTableName>Metodo_Pago</RefTableName>
+      <RefKeyName>Metodo_Pago_pk</RefKeyName>
+      <RefColNames>CMetodoPago</RefColNames>
+    </foreign-key>
+    <column id="406" parent="112" name="CVentaPresencial">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="407" parent="112" name="CSede">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="408" parent="112" name="CEmpleado">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="409" parent="112" name="VentaPresencial_pk">
+      <Position>1</Position>
+      <ColNames>CVentaPresencial</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="410" parent="112" name="VentaPresencial_pk">
+      <ObjectId>1877581727</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.013</ModifiedTimestamp>
+      <ColNames>CVentaPresencial</ColNames>
+      <UnderlyingIndexName>VentaPresencial_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="411" parent="112" name="VentaPresencial_Venta">
+      <ObjectId>674101442</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CVentaPresencial</ColNames>
+      <RefTableId>1829581556</RefTableId>
+      <RefTableName>Venta</RefTableName>
+      <RefKeyName>Venta_pk</RefKeyName>
+      <RefColNames>CVenta</RefColNames>
+    </foreign-key>
+    <foreign-key id="412" parent="112" name="VentaPresencial_Sede">
+      <ObjectId>658101385</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CSede</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>Sede</RefTableName>
+      <RefKeyName>Sede_pk</RefKeyName>
+      <RefColNames>CSede</RefColNames>
+    </foreign-key>
+    <foreign-key id="413" parent="112" name="VentaPresencial_Empleado">
+      <ObjectId>642101328</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.047</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.047</ModifiedTimestamp>
+      <ColNames>CEmpleado</ColNames>
+      <RefTableId>837578022</RefTableId>
+      <RefTableName>Empleado</RefTableName>
+      <RefKeyName>Empleado_pk</RefKeyName>
+      <RefColNames>CEmpleado</RefColNames>
+    </foreign-key>
+    <column id="414" parent="113" name="CVentaVirtual">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="415" parent="113" name="CDistrito">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="416" parent="113" name="NVia">
+      <Position>3</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="417" parent="113" name="NumVivienda">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="418" parent="113" name="CRepartridor">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="419" parent="113" name="VentaVirtual_pk">
+      <Position>1</Position>
+      <ColNames>CVentaVirtual</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="420" parent="113" name="VentaVirtual_pk">
+      <ObjectId>1909581841</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.013</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.013</ModifiedTimestamp>
+      <ColNames>CVentaVirtual</ColNames>
+      <UnderlyingIndexName>VentaVirtual_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="421" parent="113" name="VentaVirtual_Venta">
+      <ObjectId>722101613</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CVentaVirtual</ColNames>
+      <RefTableId>1829581556</RefTableId>
+      <RefTableName>Venta</RefTableName>
+      <RefKeyName>Venta_pk</RefKeyName>
+      <RefColNames>CVenta</RefColNames>
+    </foreign-key>
+    <foreign-key id="422" parent="113" name="VentaVirtual_Distrito">
+      <ObjectId>690101499</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CDistrito</ColNames>
+      <RefTableId>805577908</RefTableId>
+      <RefTableName>Distrito</RefTableName>
+      <RefKeyName>Distrito_pk</RefKeyName>
+      <RefColNames>CDistrito</RefColNames>
+    </foreign-key>
+    <foreign-key id="423" parent="113" name="VentaVirtual_Repartidor">
+      <ObjectId>706101556</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.050</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.050</ModifiedTimestamp>
+      <ColNames>CRepartridor</ColNames>
+      <RefTableId>1477580302</RefTableId>
+      <RefTableName>Repartidor</RefTableName>
+      <RefKeyName>Repartidor_pk</RefKeyName>
+      <RefColNames>CRepartidor</RefColNames>
+    </foreign-key>
+    <column id="424" parent="114" name="CVirtualCamp">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="425" parent="114" name="CTipo">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="426" parent="114" name="VirtualCamp_pk">
+      <Position>1</Position>
+      <ColNames>CVirtualCamp</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="427" parent="114" name="VirtualCamp_pk">
+      <ObjectId>1941581955</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.017</ModifiedTimestamp>
+      <ColNames>CVirtualCamp</ColNames>
+      <UnderlyingIndexName>VirtualCamp_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="428" parent="114" name="Table_9_Campania">
+      <ObjectId>562101043</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.043</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.043</ModifiedTimestamp>
+      <ColNames>CVirtualCamp</ColNames>
+      <RefTableId>613577224</RefTableId>
+      <RefTableName>Campania</RefTableName>
+      <RefKeyName>Campania_pk</RefKeyName>
+      <RefColNames>CCampania</RefColNames>
+    </foreign-key>
+    <foreign-key id="429" parent="114" name="VirtualCamp_TipoPublicidad">
+      <ObjectId>770101784</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+      <ColNames>CTipo</ColNames>
+      <RefTableId>1669580986</RefTableId>
+      <RefTableName>TipoPublicidad</RefTableName>
+      <RefKeyName>TipoPublicidad_pk</RefKeyName>
+      <RefColNames>CTipo</RefColNames>
+    </foreign-key>
+    <column id="430" parent="115" name="CVirtualCamp">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="431" parent="115" name="CPlataforma">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="432" parent="115" name="VirtualPlataforma_pk">
+      <Position>1</Position>
+      <ColNames>CPlataforma
+CVirtualCamp</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="433" parent="115" name="VirtualPlataforma_pk">
+      <ObjectId>1973582069</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.017</ModifiedTimestamp>
+      <ColNames>CPlataforma
+CVirtualCamp</ColNames>
+      <UnderlyingIndexName>VirtualPlataforma_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="434" parent="115" name="VirtualPlataforma_VirtualCamp">
+      <ObjectId>802101898</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+      <ColNames>CVirtualCamp</ColNames>
+      <RefTableId>1925581898</RefTableId>
+      <RefTableName>VirtualCamp</RefTableName>
+      <RefKeyName>VirtualCamp_pk</RefKeyName>
+      <RefColNames>CVirtualCamp</RefColNames>
+    </foreign-key>
+    <foreign-key id="435" parent="115" name="VirtualPlataforma_Plataforma">
+      <ObjectId>786101841</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.053</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.053</ModifiedTimestamp>
+      <ColNames>CPlataforma</ColNames>
+      <RefTableId>1221579390</RefTableId>
+      <RefTableName>Plataforma</RefTableName>
+      <RefKeyName>Plataforma_pk</RefKeyName>
+      <RefColNames>CPlataforma</RefColNames>
+    </foreign-key>
+    <column id="436" parent="116" name="CZona">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="437" parent="116" name="NZona">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="438" parent="116" name="Zona_pk">
+      <Position>1</Position>
+      <ColNames>CZona</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="439" parent="116" name="Zona_pk">
+      <ObjectId>2005582183</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.017</ModifiedTimestamp>
+      <ColNames>CZona</ColNames>
+      <UnderlyingIndexName>Zona_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="440" parent="117" name="CZona">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="441" parent="117" name="NZona">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="442" parent="117" name="NumLatitudInicio">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="443" parent="117" name="NumLongitudFin">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="444" parent="117" name="NumLatitudFin">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="445" parent="117" name="NumLongitudInicio">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="446" parent="117" name="ZonaRepartidor_pk">
+      <Position>1</Position>
+      <ColNames>CZona</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="447" parent="117" name="ZonaRepartidor_pk">
+      <ObjectId>2037582297</ObjectId>
+      <CreatedTimestamp>2021-02-24.09:22:47.017</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-24.09:22:47.017</ModifiedTimestamp>
+      <ColNames>CZona</ColNames>
+      <UnderlyingIndexName>ZonaRepartidor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="448" parent="118" name="CSede">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="449" parent="118" name="horario">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="450" parent="118" name="QAsistentes">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="451" parent="119" name="año">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="452" parent="119" name="mes">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="453" parent="119" name="monto">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="454" parent="120" name="CProducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="455" parent="120" name="montoTotalxproducto">
+      <Position>2</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="456" parent="121" name="cproducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="457" parent="121" name="vecesModificado">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <argument id="458" parent="122" name="@cprod">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="459" parent="122" name="@date1">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+    </argument>
+    <argument id="460" parent="122" name="@date2">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+    </argument>
+    <column id="461" parent="122" name="CProducto">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="462" parent="122" name="NProducto">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="463" parent="122" name="PrecioPromedioFiltrado">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="464" parent="122" name="tipodeBusqueda">
+      <Position>4</Position>
+      <DataType>varchar(15 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <argument id="465" parent="123" name="@valor">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="466" parent="123" name="@maxmin">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="467" parent="126" name="@maxmin">
+      <Position>1</Position>
+      <DataType>char(1 char)|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
