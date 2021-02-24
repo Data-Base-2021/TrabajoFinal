@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="TFinal4.0@localhost" uuid="7db89bce-1cc5-4536-8f08-a6956bc18031">
+    <data-source source="LOCAL" name="lacsmre" uuid="7db89bce-1cc5-4536-8f08-a6956bc18031">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost\DESKTOP-DQOH4KT:1433;database=TFinal4.0</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://localhost\DESKTOP-DQOH4KT:1433;database=pipilin</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
