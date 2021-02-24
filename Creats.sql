@@ -203,6 +203,7 @@ CREATE TABLE Producto (
     MPrecio money  NOT NULL,
     CModelo int  NOT NULL,
     CSubCategoria int  NOT NULL,
+    stock int NOT NULL,
     CONSTRAINT Producto_pk PRIMARY KEY  (CProducto)
 );
 
