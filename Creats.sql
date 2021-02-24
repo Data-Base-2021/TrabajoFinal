@@ -85,8 +85,8 @@ CREATE TABLE Empleado (
 CREATE TABLE Horario_Sede (
     CSede int  NOT NULL,
     CDia int  NOT NULL,
-    DApertura smalldatetime  NOT NULL,
-    DCierre smalldatetime  NOT NULL,
+    DApertura time(2)  NOT NULL,
+    DCierre time(2)  NOT NULL,
     CONSTRAINT Horario_Sede_pk PRIMARY KEY  (CDia,CSede)
 );
 
@@ -147,7 +147,7 @@ CREATE TABLE Persona (
     TAvenida text  NOT NULL,
     NumLote int  NOT NULL,
     NumMz int  NOT NULL,
-    TCorreoElectronico text  NOT NULL,
+    TCorreoElectronico nvarchar(100),
     NApellidoPaterno nvarchar(30)  NOT NULL,
     NApellidoMaterno nvarchar(30)  NOT NULL,
     CTipoDocumento int  NOT NULL,
@@ -203,6 +203,7 @@ CREATE TABLE Producto (
     MPrecio money  NOT NULL,
     CModelo int  NOT NULL,
     CSubCategoria int  NOT NULL,
+    stock int NOT NULL,
     CONSTRAINT Producto_pk PRIMARY KEY  (CProducto)
 );
 
@@ -210,6 +211,8 @@ CREATE TABLE Producto (
 CREATE TABLE ProductoVenta (
     CProducto int  NOT NULL,
     CVenta int  NOT NULL,
+    MParcial money  NOT NULL,
+	QProducto int  NOT NULL,
     CONSTRAINT ProductoVenta_pk PRIMARY KEY  (CProducto,CVenta)
 );
 
@@ -280,6 +283,7 @@ CREATE TABLE Sede (
     CSede int  NOT NULL,
     NSede varchar(30)  NOT NULL,
     Distrito_CDistrito int  NOT NULL,
+	QForo int NOT NULL,
     CONSTRAINT Sede_pk PRIMARY KEY  (CSede)
 );
 
