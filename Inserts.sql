@@ -1,4 +1,4 @@
-jinsert into Zona
+insert into Zona
 VALUES (54241, 'Parque Zonal VES'),
        (47447, 'Playa Agua Dulce'),
        (58774, 'Bajada Balta'),
