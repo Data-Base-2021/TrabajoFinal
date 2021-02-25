@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlserver://localhost\DESKTOP-DQOH4KT:1433;database=PruebFInal</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="version 99.8%" uuid="ed570c0e-3e96-4075-9e9c-c70cd2f0edff">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://localhost\DESKTOP-DQOH4KT:1433;database=TFinal_99.8</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

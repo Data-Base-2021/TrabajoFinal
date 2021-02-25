@@ -19,6 +19,7 @@ FROM Sede s
          join TurnoTrabajo t on e.CTurno = t.CTurno
 where e.DFinalContrato between @RFECHAINICIAL and @RFECHAFINAL
   and s.NSede = @SEDE
+    -------
 
     EXEC RangoFechaFinalcontratoysede '2020-01-10', '2022-06-15', 'Plaza del Sol'
 
@@ -57,21 +58,21 @@ de un cliente dispare un error , no permitiendo que se ejecute esta accion*/
         /**/
 /*La empresa desea mostrar el codigo de la persona,nombre,y la avenida donde vive
 solo pasandole como parametro el DNI*/
-        alter FUNCTION listarpersonapordni(@cpersona int)
+            create FUNCTION listarpersonapordni(@cpersona int)
             RETURNS @persona TABLE
                              (
                                  CPersona int,
                                  NPersona nvarchar(50),
                                  TAvenida text
                              )
-        AS
-        BEGIN
-            INSERT @persona
-            SELECT CPersona, NPersona, TAvenida
-            FROM Persona
-            WHERE CPersona = @cpersona
-            RETURN
-        END
+            AS
+            BEGIN
+                INSERT @persona
+                SELECT CPersona, NPersona, TAvenida
+                FROM Persona
+                WHERE CPersona = @cpersona
+                RETURN
+            END
         SELECT *
         FROM listarpersonapordni(14952608)
         --4--
@@ -105,7 +106,7 @@ proveedor, se le enviara como parametro el codigo de proveedor, se debe mostrar 
 son superiores al promedio del monto total por distrito*/
 
 
-        alter view vw_promediomontoventa as
+        create view vw_promediomontoventa as
             select d.NDistrito, SUM(pv.MParcial * pv.QProducto) 'monto'
             from Distrito d
                      join VentaVirtual vv on d.CDistrito = vv.CDistrito

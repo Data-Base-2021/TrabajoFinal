@@ -28,10 +28,10 @@ as
         end
 
 
-    exec pr_CalcularCantidadAsistentes 2, 0
+    exec pr_CalcularCantidadAsistentes 2, 1
 
 
- ------********************************************************************************************************************
+    ------********************************************************************************************************************
 /*2*/--=============================================================================================*
     --	El gerente desea conocer el o los productos más rentables.        *
     -- Por ello, dado un rango de fechas y un producto en específico, se deberá mostrar el          *
@@ -77,11 +77,11 @@ as
 select *
 from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
 
---***************************************************************************************************************************************
+    --***************************************************************************************************************************************
 
 /*3*/
-   --============================================================================================================*
-   -- 5)	El gerente desea mostrar el monto total gastado en campañas.                                       *
+    --============================================================================================================*
+    -- 5)	El gerente desea mostrar el monto total gastado en campañas.                                       *
     --Para ello, se debe mostrar en una tabla invertida, el año, el mes y monto total gastado.                 *
 --================================================================================================================
 
@@ -116,6 +116,7 @@ from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
             fetch first from mycursor
             close mycursor
             deallocate mycursor
+            -----------------
             create procedure pr_ultimovalorcampaña_
             as
             declare
@@ -131,7 +132,7 @@ from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
                 exec pr_PrimervALORmONTOcAMPAÑA_
                 exec pr_ultimovalorcampaña_
 
---*********************************************************************
+                --*********************************************************************
 /*4*/--======================================================================================================*
 --	Se solicita automatizar el stock de los productos. Por ello, se debe implementar un trigger que    *
 -- sume la cantidad de compras y reste la cantidad de ventas al stock.                                     *
@@ -167,13 +168,12 @@ from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
                         insert into Venta
                         values (4, 70675089, 100, 1, '2020-02-03')
                         insert into ProductoVenta
-                        values (115, 4, 40, 8)
-
---************************************************************************************************************************
-/*5*/   --===============================================================================================================================*
-           --   4)	  El gerente quiere que se registren los productos que son modificados.                                                *
-            --         Guardar en una tabla el producto, con los valores antiguos y lo nuevos.                                             *
-             --       Con la información generada, mostrar cual es el producto con mayor inestabilidad durante determinadas fechas.        *
+                        values (117, 4, 40, 8)
+                        --************************************************************************************************************************
+/*5*/ --===============================================================================================================================*
+                        --   4)	  El gerente quiere que se registren los productos que son modificados.                                                *
+                        --         Guardar en una tabla el producto, con los valores antiguos y lo nuevos.                                             *
+                        --       Con la información generada, mostrar cual es el producto con mayor inestabilidad durante determinadas fechas.        *
 --========================================================================================================================================
 
                         create table HistorialProductos
@@ -263,6 +263,6 @@ from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
                             where CProducto = 113
 
 
-                                exec pr_productoQuemascambio_ 's'
+                                exec pr_productoQuemascambio_ 'f'
 
 
