@@ -52,29 +52,28 @@ de un cliente dispare un error , no permitiendo que se ejecute esta accion*/
         WHERE CPersona = 14952608;
 
 
-        --3--
+--3--
 
-        /*
-        El gerente desea saber todas las inscripciones  realizadas por un determinado empleado.
-        Usar el código del empleado para generar los resultados. Asi ,mostrar el codigo del empleado,
-        la fecha de inscripcion,codigo de inscripcion,codigo de usuario y nombre del usuario.*/
-
-        /* creamos la funcion */
-            create FUNCTION masinscripcionesdeunasede(@csede INT, @fecha_inicio DATETIME, @fecha_final DATETIME)
-            RETURNS TABLE
-                AS
-                RETURN
-                    (
-
-                        select e.CEmpleado, i.DIncripcion, i.CInscripcion, u.CUsuario, p.NPersona
-                        from Persona p
-                                 join Empleado e on p.CPersona = e.CEmpleado
-                                 join Inscripcion i on e.CEmpleado = i.CEmpleado
-                                 join Usuario u on i.CUsuario = u.CUsuario
-                        where e.CEmpleado = @cempleado
-                    )
+        /**/
+/*La empresa desea mostrar el codigo de la persona,nombre,y la avenida donde vive
+solo pasandole como parametro el DNI*/
+        alter FUNCTION listarpersonapordni(@cpersona int)
+            RETURNS @persona TABLE
+                             (
+                                 CPersona int,
+                                 NPersona nvarchar(50),
+                                 TAvenida text
+                             )
+        AS
+        BEGIN
+            INSERT @persona
+            SELECT CPersona, NPersona, TAvenida
+            FROM Persona
+            WHERE CPersona = @cpersona
+            RETURN
+        END
         SELECT *
-        FROM inscripcionesrealizadas(40025622)
+        FROM listarpersonapordni(14952608)
         --4--
 
 /*
@@ -88,15 +87,16 @@ proveedor, se le enviara como parametro el codigo de proveedor, se debe mostrar 
 
             RETURNS TABLE
                 AS
-                RETURN(
-                select p.CProveedor, p.NProveedor, pr.CProducto, pr.NProducto
-                from Proveedor p
-                         join Compra_Proveedor cp on p.CProveedor = cp.CProveedor
-                         join Detalle_Compra dc on dc.CCompra = cp.CCompra
-                         join Producto pr on dc.CProducto = pr.CProducto
-                where p.CProveedor = @codigoproveedor
-                group by p.CProveedor, p.NProveedor, pr.CProducto, pr.NProducto )
-
+                RETURN
+                    (
+                        select p.CProveedor, p.NProveedor, pr.CProducto, pr.NProducto
+                        from Proveedor p
+                                 join Compra_Proveedor cp on p.CProveedor = cp.CProveedor
+                                 join Detalle_Compra dc on dc.CCompra = cp.CCompra
+                                 join Producto pr on dc.CProducto = pr.CProducto
+                        where p.CProveedor = @codigoproveedor
+                        group by p.CProveedor, p.NProveedor, pr.CProducto, pr.NProducto
+                    )
         SELECT *
         FROM listarproductorporproveedor(103)
         ---5---
@@ -106,14 +106,13 @@ son superiores al promedio del monto total por distrito*/
 
 
         alter view vw_promediomontoventa as
-
-        select d.NDistrito, SUM(pv.MParcial * pv.QProducto) 'monto'
-        from Distrito d
-                 join VentaVirtual vv on d.CDistrito = vv.CDistrito
-                 join Venta v on vv.CVentaVirtual = v.CVenta
-                 join ProductoVenta pv on v.CVenta = pv.CVenta
-        group by d.NDistrito
-        -----------
+            select d.NDistrito, SUM(pv.MParcial * pv.QProducto) 'monto'
+            from Distrito d
+                     join VentaVirtual vv on d.CDistrito = vv.CDistrito
+                     join Venta v on vv.CVentaVirtual = v.CVenta
+                     join ProductoVenta pv on v.CVenta = pv.CVenta
+            group by d.NDistrito
+-----------
         select AVG(vw.monto)
         from vw_promediomontoventa as vw
         select vw.NDistrito, vw.monto

@@ -33,7 +33,7 @@ as
 
  ------********************************************************************************************************************
 /*2*/--=============================================================================================*
-    --	El gerente desea conocer el o los productos más rentables por cada subcategoría.        *
+    --	El gerente desea conocer el o los productos más rentables.        *
     -- Por ello, dado un rango de fechas y un producto en específico, se deberá mostrar el          *
     -- precio promedio general y el precio promedio durante las fechas ingresadas.                  *
     --================================================================================================
@@ -263,6 +263,6 @@ from dbo.fn_ObtenerRentabilidad_(114, '2018/10/19', '2019/11/11');
                             where CProducto = 113
 
 
-                                exec pr_productoQuemascambio_ 'p'
+                                exec pr_productoQuemascambio_ 's'
 
 
