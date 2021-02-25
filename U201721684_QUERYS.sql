@@ -3,15 +3,15 @@ Sacar todos los empleados por DNI que tienen la fecha final de contrato en un de
 y que pertenescan a una determinada sede, se requiere mostrar nombre del empleado,nombre de la sede,y la fecha final de contrato.
 */
 
-ALTER PROCEDURE RangoFechaFinalcontratoysede
-@RFECHAINICIAL DATETIME,
-@RFECHAFINAL DATETIME ,
+create PROCEDURE RangoFechaFinalcontratoysede
+@RFECHAINICIAL date,
+@RFECHAFINAL date ,
 @SEDE NVARCHAR(30)
 AS
 SELECT p.CPersona,p.NPersona,s.NSede,e.DFinalContrato FROM 
 Sede s join Empleado e on s.CSede=e.CSede
 join Persona p on e.CEmpleado=p.CPersona
-join TurnoTrabajo t on e.CTurno=t.CTurno where  e.DFinalContrato between @RFECHAINICIAL and @RFECHAFINAL and s.NSede=@SEDE 
+join TurnoTrabajo t on e.CTurno=t.CTurno where  e.DFinalContrato between @RFECHAINICIAL and @RFECHAFINAL and s.NSede=@SEDE
 
 EXEC RangoFechaFinalcontratoysede '2020-01-10','2022-06-15','Plaza del Sol'
 
@@ -33,7 +33,7 @@ END
 /*Probando que no se permite actualizar el nombre*/
 UPDATE Persona
 SET NPersona = 'pepe'
-WHERE CPersona = "14952608"
+WHERE CPersona = 14952608
 
 
 
@@ -93,15 +93,11 @@ group by d.NDistrito
 
 select 
 AVG(vw.monto)
-from 
-
-vw_promediomontoventa as vw
+from vw_promediomontoventa as vw
 
 select vw.NDistrito,vw.monto from vw_promediomontoventa as vw where vw.monto>(select 
 AVG(vw_promediomontoventa.monto)
-from 
-
-vw_promediomontoventa)
+from vw_promediomontoventa)
 
 
 
